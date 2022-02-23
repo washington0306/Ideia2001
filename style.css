@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #f08910;
+    max-width: 1600px;
+    
+    font-family: sans-serif;
+}
+
+/*Header*/
+
+header{
+    font-size: 1rem;
+    color: white;
+    background-color: white;
+    height: 7rem;
+    width: 100%;
+    display: flex; 
+}
+
+.container{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > a{
+    background-color: white;
+}
+
+.container > a > img{
+    background-color: white;
+}
+
+.menu{
+    background-color: white;
+}
+
+.menu > a{
+    background-color: white;
+    color:  #868686;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0 2rem 0 0;
+    padding-bottom: 5px;
+}
+.menu > a:hover{
+      color: black;
+    border-bottom: 2px solid #ea8914;  
+}
+
+.login{
+    color: #868686;
+    text-align: right;
+    background-color: white;
+    display: flex;
+}
+
+.login > div{
+    background-color: transparent;
+}
+
+.login p{
+    width: 10rem;
+    height: 1rem;
+    font-size: 1.1rem;
+    text-align: right;
+    background-color: white;
+}
+
+.login a{
+    height: 22px;
+    background-color: white;
+    color: #ea8914;
+    cursor: pointer;
+    
+}
+
+.login > img{
+    border-radius: 50px;
+    
+}
+
+/*principais*/
+
+.principais{
+    height: 100vh;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 9.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.vitrine{
+    width: 76%;
+    height: 38rem;
+    
+    background-color: white;
+    margin-bottom:12.5rem;
+    text-align: center;
+    margin: 0 0 12.5rem 9rem;
+    
+    
+}
+
+.vitrine > p{
+    background-color: white;
+    padding: 8rem 0 3rem;
+    align-items: center;
+}
+
+.vitrine strong{
+    background-color: transparent;
+}
+
+.link{
+    background-color: white;
+    align-items: center;
+    
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+    min-width: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.banner a{
+    text-decoration: none;
+    
+    background-color: white;
+    flex: 1 1 auto;
+}
+
+.info{
+    color: white;
+    background-image: linear-gradient(to bottom, white, #f1f1f1);
+    height: 12rem;
+    /* width: 14rem; */
+    margin: 0 2rem 0 2rem;
+    border-radius: 2rem;
+    border: 1px solid #f1f1f1;
+    
+}
+
+.info:hover{
+    border: 1px solid #ea8914;
+}
+
+.icone{
+    background-color: transparent;
+    margin-top: 3rem;
+    height: 4rem;
+    width: 6rem;
+}
+
+.info > strong{
+    background-color: transparent;
+    color: black;
+    width: 10rem;
+    
+}
+
+.ContainerFooter{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.ContainerFooter > p{
+    color:white;
+    background-color: black;
+
+}
+
+.ContainerFooter > a{
+    background-color: black;
+    color: #ea8914;
+}
+
+/* modal desconectar */
+
+.ContainerModal{
+    width: 100%;
+    height: 35vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.Mostrar{
+    display: flex;
+}
+@keyframes Modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.ContainerModal{
+    background-color: transparent;
+}
+.Mostra .Modal{
+    animation: Modal .3s;
+}
+.Mostra .Modal{
+    animation: Modal .3s;
+}
+.Modal{
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #EBEBEB;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+    border: 1px solid #1c1c1c;
+    margin-right: 100px;   
+}
+
+.Subtitulo{
+    background-color: #1c1c1c;
+}
+.ContainerButton{
+    background-color: transparent;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.Button{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+}
+.Button:hover{
+    background-color: var(--Gainsboro);
+    box-shadow: 1px 1px 10px 0.5px #1c1c1c;
+    color: var(--Black);
+}
+
+/*Responsive*/
+
+:root {
+
+}
+@media  (max-width: 900px){
+    .principais{
+        width: 100%;
+    }
+    .vitrine{
+        height: 100vh;
+        width: 100%;
+        margin: 0 0 12.5rem 0;
+    }
+
+    .container{
+        width: 70%;
+    }
+    .logo{
+        width: 7rem;
+        height: 2rem;
+    }
+    .nome{
+        width: 4rem;
+    }
+}
